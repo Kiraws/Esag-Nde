@@ -33,16 +33,18 @@ use App\Http\Controllers\EtudiantController;
 
  Route::post('multiplication',[IntroController::class,'multiplication' ] );
 
-//Création de la route vers la méthode index de la classe EtudiantController
-
- Route::get('etudiant',[EtudiantController::class,'index' ] );
-
- Route::get('ajout_etudiant',[EtudiantController::class,'ajout_etudiant' ] );
+ Route::resource('etudiant', App\Http\Controllers\EtudiantController::class);
 
 
- Route::post('enregistrer_etudiant',[EtudiantController::class,'enregistrer_etudiant' ] ) ->name('etudiant.enregistrer');
+// //Création de la route vers la méthode index de la classe EtudiantController
 
- 
+//  Route::get('etudiant',[EtudiantController::class,'index' ] );
+
+//  Route::get('ajout_etudiant',[EtudiantController::class,'ajout_etudiant' ] );
+//  Route::post('enregistrer_etudiant',[EtudiantController::class,'enregistrer_etudiant' ] ) ->name('etudiant.enregistrer');
+ //Route::get('supprEtudiant/{$id}',[EtudiantController::class,'supprEtudiant' ] )->name('supprEtudiant');
+ //Route::delete('etudiant', App\Http\Controllers\EtudiantController::class);
+ //Route::get('supprEtudiant',['as' => 'supprEtudiant' , 'uses' => 'EtudiantController@supprEtudiant'] );
 
 
 

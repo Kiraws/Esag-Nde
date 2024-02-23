@@ -3,7 +3,7 @@
 
 
 <h2>ETUDIANTS</h2>
-<a href="{{ url('/ajout_etudiant') }}" class="my-btn" >Ajouter</a>
+<a href="{{ route('etudiant.create') }}" class="my-btn" >Ajouter</a>
 <Table>
     <tr>
         <th>#</th>

@@ -1,6 +1,6 @@
 @extends('template')
 @section('contenu')
-{!! Form::open(['route' => 'etudiant.enregistrer']) !!}
+{!! Form::open(['route' => 'etudiant.store']) !!}
     <div class="">
         {!! Form::label('nom', 'Nom:') !!}
         {!! Form::text('nom', null, ['class' => 'form-control']) !!}
